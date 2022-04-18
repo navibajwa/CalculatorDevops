@@ -17,7 +17,7 @@ public class Calculator {
         Scanner scanner = new Scanner(System.in);
         double number1, number2;
         do {
-            System.out.println("Calculator-DevOps, Choose to perform operation");
+            System.out.println("Calculator DevOps, Choose to perform operation");
             System.out.print("Press 1 to find factorial\nPress 2 to find Square root\nPress 3 to find power\nPress 4 to find natural logarithm\n" +
                     "Press 5 to exit\nEnter your choice: ");
             int choice;
@@ -70,9 +70,9 @@ public class Calculator {
     }
 
 
-    public double factoral(double number1) {
-        logger.info("[FACTORIAL] - " + number1);
-        double result = fact(number1);
+    public double factoral(double number) {
+        logger.info("[FACTORIAL] - " + number);
+        double result = fact(number);
         logger.info("[RESULT - FACTORIAL] - " + result);
         return result;
     }
@@ -113,9 +113,9 @@ public class Calculator {
         return result;
     }
     public double fact(double num) {
-        double facto = 1;
+        double f= 1;
         for(int i = 1; i <= num; ++i)
-        { facto *= i;   }
-        return  facto;
+        { f *= i;   }
+        return  f;
     }
 }
